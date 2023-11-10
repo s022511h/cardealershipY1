@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dreson's Motors</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+
+    <header class="header">
+
+      <a href="Openpage.htm">
+        <section class="logo">&Dscr;</section>
+      </a>
+     
+      
+      <h1>Drive away, Buy Today</h1>
+
+      <section class="nav-icon">
+        <span class="icon"></span>
+      </section>
+
+      <section class="nav-overlay">
+
+      </section>
+
+      <video id="welcomevid" width="800" autoplay controls>
+       <source src="VID.mp4" type="video/mp4">
+      </video>
+      <div id="video-control-bar">
+       <button id="playpausebtn" onclick>pause</button>
+
+      <nav class="navigation">
+        <ul class="navigation__ul" ul style="list-style-type:none">
+          <li><a href="about.htm">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="gallery.htm">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+      </nav>
+      
+      
+      <script src="jquery.js"></script>
+      <script>
+        $(function(){
+          $(".nav-icon, .nav-overlay").click(function(){
+            $("body").toggleClass("nav-is-open");
+          });
+        });
+      </script>
+    </header>
+  </body>
+</html>
